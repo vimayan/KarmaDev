@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- preload head styles -->
+    <link rel="preload" href="../assets/css/unicons.min.css" as="style" />
+    <link rel="preload" href="../assets/css/swiper-bundle.min.css" as="style" />
+
+    <!-- preload footer scripts -->
+    <link rel="preload" href="../assets/js/libs/jquery.min.js" as="script" />
+    <link
+      rel="preload"
+      href="../assets/js/libs/scrollmagic.min.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="../assets/js/libs/swiper-bundle.min.js"
+      as="script"
+    />
+    <link rel="preload" href="../assets/js/libs/anime.min.js" as="script" />
+    <link
+      rel="preload"
+      href="../assets/js/helpers/data-attr-helper.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="../assets/js/helpers/swiper-helper.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="../assets/js/helpers/anime-helper.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="../assets/js/helpers/anime-helper-defined-timelines.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="../assets/js/uikit-components-bs.js"
+      as="script"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="preload" href="../assets/js/app.js" as="script" /> -->
+
+    <!-- app head for bootstrap core -->
+    <!-- <script src="../assets/js/app-head-bs.js"></script> -->
+
+    <!-- include uni-core components -->
+    <link rel="stylesheet" href="../assets/js/uni-core/css/uni-core.min.css" />
+
+    <!-- include styles -->
+    <link rel="stylesheet" href="../assets/css/unicons.min.css" />
+    <link rel="stylesheet" href="../assets/css/prettify.min.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+
+    <!-- include main style -->
+    <link rel="stylesheet" href="../assets/css/theme/main.min.purge.css" />
+
+    <!-- include scripts -->
+    <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+
+    
+
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script> -->
+
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div
+      class="uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden"
+      id="root"
+    ></div>
+    <script defer src="../assets/js/libs/jquery.min.js"></script>
+    <script defer src="../assets/js/libs/bootstrap.min.js"></script>
+
+    <!-- include scripts -->
+    <script defer src="../assets/js/libs/anime.min.js"></script>
+    <script defer src="../assets/js/libs/swiper-bundle.min.js"></script>
+    <script defer src="../assets/js/libs/scrollmagic.min.js"></script>
+    <script defer src="../assets/js/helpers/data-attr-helper.js"></script>
+    <script defer src="../assets/js/helpers/swiper-helper.js"></script>
+    <script defer src="../assets/js/helpers/anime-helper.js"></script>
+    <script
+      defer
+      src="../assets/js/helpers/anime-helper-defined-timelines.js"
+    ></script>
+    <script defer src="../assets/js/uikit-components-bs.js"></script>
+
+    <!-- include app script -->
+    <script defer src="../assets/js/app.js"></script>
+
+    <script>
+      // Schema toggle via URL
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const getSchema = urlParams.get("schema");
+      if (getSchema === "dark") {
+        setDarkMode(1);
+      } else if (getSchema === "light") {
+        setDarkMode(0);
+      }
+    </script>
+  </body>
+</html>
