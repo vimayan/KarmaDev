@@ -1,6 +1,9 @@
-import Img1 from "../data/template/home-four-feature-01.png";
-import Playstore from "../data/common/playstore.svg";
+import DateCalender from "../component/approach/Calendar";
+import TimeLine from "../component/approach/TimeLine";
 import Apple from "../data/common/appstore.svg";
+import Playstore from "../data/common/playstore.svg";
+import Img1 from "../data/template/home-four-feature-01.png";
+
 function ProductDesign() {
   return (
     <div id="wrapper" className="wrap ">
@@ -188,6 +191,15 @@ function ProductDesign() {
       </div>
 
       <div
+        id="timeline_works"
+        className="timeline_works section panel overflow-hidden"
+      >
+        <div className="section-outer panel py-6 xl:py-9 ">
+          <TimeLine />
+        </div>
+      </div>
+
+      <div
         id="key_features"
         className="key-features section panel overflow-hidden bg-gray-900 uc-dark"
       >
@@ -366,6 +378,135 @@ function ProductDesign() {
         </div>
       </div>
 
+      <div
+        id="smart_features"
+        className="key-features section panel overflow-hidden"
+      >
+        <div className="section-outer panel py-6 xl:py-9">
+          <div className="container sm:max-w-lg xl:max-w-xl">
+            <div className="section-inner panel">
+              <div
+                className="panel vstack items-center gap-2 xl:gap-3 mb-4 sm:mb-8 xl:mb-9 max-w-700px mx-auto text-center"
+                data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+              >
+                <h2 className="h3 lg:h2 xl:h1 m-0">
+                  Smart features for your business
+                </h2>
+                <p className="fs-6 xl:fs-5 text-dark dark:text-white text-opacity-70">
+                  We focus on helping you to make useful content more accessible
+                  with an utlimate goal for a good sharing profit as a content
+                  creator.
+                </p>
+              </div>
+              <div className="row child-cols-12 sm:child-cols-6 xl:child-cols-4 col-match justify-center g-2 lg:g-4">
+                <div>
+                  <div
+                    className="feature-item panel px-3 lg:px-4 py-4 rounded-2 bg-secondary dark:bg-gray-800"
+                    data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
+                  >
+                    <div className="vstack gap-4 h-100">
+                      <div className="panel w-100 rounded lg:rounded-2 overflow-hidden">
+                        <img
+                          src="../assets/images/template/feature-01.svg"
+                          alt="Share tools quickly and confidently in minutes"
+                        />
+                      </div>
+                      <div className="panel">
+                        <div className="panel vstack justify-center gap-4 h-100">
+                          <div>
+                            <div className="panel vstack gap-2">
+                              <h3 className="h4 m-0">
+                                Share tools quickly and confidently in minutes
+                              </h3>
+                              <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
+                                This powerfull tool eliminates the need to leave
+                                Salesforce to get things done as I can create a
+                                custom proposal with dynamic pricing tables. You
+                                can also customize your own dynamic versions.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="feature-item panel px-3 lg:px-4 py-4 rounded-2 bg-secondary dark:bg-gray-800"
+                    data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
+                  >
+                    <div className="vstack gap-4 h-100">
+                      <div className="panel w-100 rounded lg:rounded-2 overflow-hidden">
+                        <img
+                          src="../assets/images/template/feature-02.svg"
+                          alt="Connect every part of your entire business"
+                        />
+                      </div>
+                      <div className="panel">
+                        <div className="panel vstack justify-center gap-4 h-100">
+                          <div>
+                            <div className="panel vstack gap-2">
+                              <h3 className="h4 m-0">
+                                Connect every part of your entire business
+                              </h3>
+                              <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
+                                Keep data consistent, with native CRM
+                                integrations that streamline your entire Tool
+                                workflow.
+                              </p>
+                              <a
+                                href="#"
+                                className="uc-link fw-bold hstack gap-narrow"
+                              >
+                                <span>See all integrations</span>
+                                <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="feature-item panel px-3 lg:px-4 py-4 rounded-2 bg-secondary dark:bg-gray-800"
+                    data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;"
+                  >
+                    <div className="vstack gap-4 h-100">
+                      <div className="panel w-100 rounded lg:rounded-2 overflow-hidden">
+                        <img
+                          src="../assets/images/template/feature-03.svg"
+                          alt="Maintain compliance and control your apps"
+                        />
+                      </div>
+                      <div className="panel">
+                        <div className="panel vstack justify-center gap-4 h-100">
+                          <div>
+                            <div className="panel vstack gap-2">
+                              <h3 className="h4 m-0">
+                                Maintain compliance and control your apps
+                              </h3>
+                              <p className="fs-6 lg:fs-5 opacity-70 dark:opacity-80">
+                                Improve security and trust with built-in legally
+                                binding e-Signatures. Create pre-approved
+                                templates, content blocks and lock all legal
+                                information to prevent costly mistakes.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="faq" className="section panel overflow-hidden">
         <div className="section-outer panel py-6 xl:py-9">
           <div className="container max-w-lg">
@@ -386,8 +527,8 @@ function ProductDesign() {
                       <div className="uc-accordion-content">
                         <p>
                           Yes, you need to have a fair amount of knowledge in
-                          dealing with HTML/CSS as well as JavaScript in order to
-                          be able to use Lexend.
+                          dealing with HTML/CSS as well as JavaScript in order
+                          to be able to use Lexend.
                         </p>
                       </div>
                     </li>
@@ -399,8 +540,8 @@ function ProductDesign() {
                         <p>
                           Feel free to do so. Lexend does exist to evolve every
                           commercial project. You can also use it to build
-                          stunning websites for your own clients (we won’t breathe
-                          a word).
+                          stunning websites for your own clients (we won’t
+                          breathe a word).
                         </p>
                       </div>
                     </li>
@@ -430,10 +571,10 @@ function ProductDesign() {
                       <div className="uc-accordion-content">
                         <p>
                           We understand the importance of customer satisfaction
-                          and we strive to provide the best products and services.
-                          However, please note that due to the nature of our
-                          products and services, we do not offer refunds after a
-                          purchase has been made.
+                          and we strive to provide the best products and
+                          services. However, please note that due to the nature
+                          of our products and services, we do not offer refunds
+                          after a purchase has been made.
                         </p>
                       </div>
                     </li>
@@ -445,7 +586,172 @@ function ProductDesign() {
         </div>
       </div>
 
-      <footer id="uc-footer" className="uc-footer panel overflow-hidden uc-dark">
+      <div id="book-meeting" className="section panel overflow-hidden ">
+        <div className="section-outer panel py-4 md:py-6 xl:py-9">
+          <div className="container-expand">
+            <div
+              className="section-inner panel"
+              style={{ position: "relative" }}
+            >
+              <div
+                style={{
+                  display: "block",
+                  position: "absolute",
+                  left: "50%",
+                  top: "50%",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  verticalAlign: "text-top",
+                  width: "60px",
+                  marginLeft: "-30px",
+                  marginTop: "-15px",
+                  borderRadius: "15px",
+                  paddingTop: "2px",
+                  paddingBottom: "3.5px",
+                  zIndex: "200",
+                  backgroundColor: "#E4FAFF",
+                  fontWeight: "bold",
+                }}
+              >
+                or
+              </div>
+              <div
+                className="row child-cols-12 g-6 md:g-8 xl:g-6 "
+                data-uc-scrollspy="target: >*; delay: 500; cls: uc-animation-slide-bottom-medium"
+              >
+                <div>
+                  <div className="feature-item panel">
+                    <div className="row child-cols item-center   ">
+                      <div className="col-12 my-8 lg:col-6 h-600px   bg-meeting order-2 lg:order-1">
+                        <div
+                          className="col-10"
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "space-around",
+                            height: "inherit",
+                          }}
+                        >
+                          <div className="d-flex flex-column items-center ">
+                            <div className="col-8">
+                              <h5>Ready to innovate business?</h5>
+                              <div>
+                                We are! Let's kick-off our journey to success!
+                              </div>
+                            </div>
+                          </div>
+                          <div className="d-flex flex-column items-center">
+                            <div
+                              className="col-12 mb-3"
+                              style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                              }}
+                            >
+                              <input
+                                type="text"
+                                placeholder="  Full name"
+                                className="col-8 py-2"
+                                style={{
+                                  borderRadius: "10px",
+                                  border: "none",
+                                  backgroundColor: " #E4FAFF",
+                                }}
+                              />
+                              <input
+                                type="text"
+                                placeholder="  Email address"
+                                className="col-8 py-2 mt-3"
+                                style={{
+                                  borderRadius: "10px",
+                                  border: "none",
+                                  backgroundColor: " #E4FAFF",
+                                }}
+                              />
+                              <textarea
+                                cols="20"
+                                rows="3"
+                                placeholder="  Message*"
+                                className="col-8 py-2 mt-3"
+                                style={{
+                                  borderRadius: "10px",
+                                  border: "none",
+                                  backgroundColor: " #E4FAFF",
+                                }}
+                              ></textarea>
+                            </div>
+                            <div className="col-8 py-2">
+                              <input
+                                className="  border-primary w-24px"
+                                type="checkbox"
+                                name=""
+                                id=""
+                                style={{ transform: " scale(1.5)" }}
+                              />
+                              <span>
+                                yes, I have read and agree to the{" "}
+                                <u className="me-1">Data Privacy</u>
+                                and Legal Notice
+                              </span>
+                            </div>
+                            <div className="col-8 justify-start">
+                              <button className="col-12 md:col-6  rounded-3 btn bg-book  fs-4 ">
+                                send
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-12  my-8 lg:col-6 h-600px d-flex flex-column justify-center items-center   bg-book order-1 lg:order-2">
+                        <div
+                        
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "space-around",
+                            height: "inherit",
+                          }}
+                        >
+                          <div className="col-12 text-white">
+                            <h5>Book a Meeting</h5>
+                            <div className="d-flex flex-column gap-1">
+                              <div className="d-flex items-center gap-1">
+                                <i class="fa-solid fa-phone"></i>
+
+                                <div>Call(Toll-Free*) +1(800) 917-0207</div>
+                              </div>
+                              <div className="d-flex items-center gap-1">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>Email hello@avenga.com</div>
+                              </div>
+                              <div className="d-flex items-center gap-1">
+                                <i class="fa-solid fa-video"></i>
+                                <div>Zoom 30mins</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-12">
+                            <DateCalender />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        id="uc-footer"
+        className="uc-footer panel overflow-hidden uc-dark"
+      >
         <div className="footer-outer py-4 lg:py-6 xl:py-9  dark:bg-gray-900 dark:text-white">
           <div className="container max-w-xl">
             <div className="footer-inner vstack gap-4 lg:gap-6 xl:gap-8">
@@ -524,7 +830,9 @@ function ProductDesign() {
                         <a href="shop-product-detail.html">Product detail</a>
                       </li>
                       <li>
-                        <a href="shop-product-detail-2.html">Product detail v2</a>
+                        <a href="shop-product-detail-2.html">
+                          Product detail v2
+                        </a>
                       </li>
                       <li>
                         <a href="shop-cart.html">Cart</a>
